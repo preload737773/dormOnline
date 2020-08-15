@@ -1,0 +1,58 @@
+<div class="container-fluid" style="padding-top: 5%">
+  <div class="row">
+    <!--profile view-->
+    <div class="col col-4 ml-auto mr-auto ml-lg-4 mr-lg-4">
+      <div class="profile">
+        <h2>
+          Профиль
+        </h2>
+        <div class="image">
+          <svg width="100%" height="100%" viewBox="0 0 16 16" class="bi bi-person-circle" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+          </svg>
+        </div>
+        <h2>{{ role }}</h2>
+        <div class="feature-box">
+          <div class="username">{{ username }}</div> <br>
+          <div class="feature-label">комната: </div> <span>{{ room.toString() }}</span> <br>
+          <div class="feature-label">номер группы: </div> <span>{{ group }}</span> <br>
+          <div class="feature-label">телефон: </div> <span>{{ phone }}</span> <br>
+          <div class="feature-label">логин: </div> <span>{{ login }}</span> <br>
+          <div class="feature-label">тип комнаты: </div> <span>{{ roomType }}</span> <br>
+        </div>
+      </div>
+    </div>
+    <!--actions view-->
+    <div class="col col-3 mr-auto mr-lg-4">
+      <div class="actions">
+        <h2>
+          Действия
+        </h2>
+        <button class="baseButton">Редактировать профиль</button>
+        <button class="baseButton">Оплатить</button>
+        <button class="baseButton">Переехать</button>
+      </div>
+    </div>
+    <!--notifications view-->
+    <div class="col col-4 mr-auto mr-lg-4">
+      <div class="notifications">
+        <h2>
+          Уведомления
+        </h2>
+        <div class="notification">
+          <div class="title">
+            оплата общежития
+          </div>
+          <hr>
+          <div class="content">
+            Период с 1.09.19 по 1.03.20
+          </div>
+          <hr>
+          <button>Открыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

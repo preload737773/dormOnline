@@ -1,0 +1,79 @@
+@use "src/app/login/login.component";
+
+$registerColor: #1F1F1F;
+$registerBorderRadius: 0.25rem;
+$registerInputBackgroundColor: #3b4148;
+$registerInputHoverBackgroundColor: #434a52;
+$registerLabelBackgroundColor: #363b41;
+$registerSubmitBackgroundColor: #cc0000;
+$registerSubmitColor: #eee;
+$registerSubmitHoverBackgroundColor: #ff0000;
+
+.register {
+  color: $registerColor;
+}
+
+.register label,
+.register input[type='text'],
+.register input[type='password'],
+.register input[type='submit'],
+.register input[type='radio'] {
+  border-radius: $registerBorderRadius;
+  padding: 1rem;
+}
+
+.register label {
+  background-color: $registerLabelBackgroundColor;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: 0;
+}
+
+.register input[type='password'],
+.register input[type='text'] {
+  background-color: $registerInputBackgroundColor;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.register input[type='password']:focus,
+.register input[type='password']:hover,
+.register input[type='text']:focus,
+.register input[type='text']:hover {
+  background-color: $registerInputHoverBackgroundColor;
+}
+
+.register input[type='submit'] {
+  background-color: $registerSubmitBackgroundColor;
+  color: $registerSubmitColor;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.register input[type='submit']:focus,
+.register input[type='submit']:hover {
+  background-color: $registerSubmitHoverBackgroundColor;
+}
+
+.register select {
+  background-color: $registerInputBackgroundColor;
+  border: none;
+}
+
+.register select:hover,
+.register select:focus {
+  background-color: $registerInputHoverBackgroundColor;
+  border: none;
+}
+
+.input-text {
+  color: #757575;
+  padding: .5em;
+}
+
+.register-label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
